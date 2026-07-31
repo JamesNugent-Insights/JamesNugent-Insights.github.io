@@ -1,23 +1,25 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James Nugent | Portfolio</title>
 
     <style>
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #ffffff;
-            color: #4a5568;
+            color: #4A5568;
         }
 
         .banner {
             width: 100%;
-            height: auto;
             display: block;
+            height: auto;
         }
 
         .about {
@@ -38,65 +40,77 @@
         }
 
         .about-text h2 {
-            margin: 0 0 12px;
-            color: #1f3558;
+            margin: 0;
+            color: #1F3558;
             font-size: 34px;
         }
 
         .about-text h2::after {
             content: "";
             display: block;
-            width: 58px;
+            width: 60px;
             height: 3px;
+            background: #B08A4A;
             margin-top: 10px;
-            background: #b08a4a;
+            margin-bottom: 24px;
+        }
+
+        .about-subtitle {
+            color: #1F3558;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
         }
 
         .about-text p {
-            margin: 0 0 18px;
             font-size: 17px;
-            line-height: 1.7;
+            line-height: 1.8;
+            margin-bottom: 18px;
         }
 
         .about-text strong {
-            color: #1f3558;
+            color: #1F3558;
         }
 
-        @media (max-width: 750px) {
+        @media (max-width: 768px) {
+
             .about {
                 grid-template-columns: 1fr;
-                padding: 45px 22px;
+                padding: 45px 25px;
             }
 
             .about-photo {
                 max-width: 260px;
                 margin: 0 auto;
             }
+
         }
+
     </style>
+
 </head>
 
 <body>
 
-    <img
-        class="banner"
-        src="assets/images/banner.png"
-        alt="James Nugent portfolio banner"
-    >
+    <img class="banner"
+         src="assets/images/banner.png"
+         alt="James Nugent Portfolio Banner">
 
     <section class="about">
 
         <div class="about-photo">
-            <img src="assets/images/profile.jpg" alt="James Nugent">
+            <img src="assets/images/profile.jpg"
+                 alt="James Nugent">
         </div>
 
         <div class="about-text">
 
             <h2>About Me</h2>
 
-            <p>
-                <strong>Operations. Finance. Data. One goal: helping businesses make better decisions.</strong>
-            </p>
+            <div class="about-subtitle">
+                Data. Finance. Commercial Thinking.
+            </div>
 
             <p>
                 I've spent over 16 years helping businesses improve performance through better analysis, clearer reporting and stronger commercial decision-making.
@@ -111,7 +125,8 @@
             </p>
 
             <p>
-                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong> Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
+                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong>
+                Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
             </p>
 
             <p>
@@ -127,4 +142,5 @@
     </section>
 
 </body>
+
 </html>
