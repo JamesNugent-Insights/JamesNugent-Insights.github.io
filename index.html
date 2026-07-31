@@ -1,40 +1,130 @@
 
-<section class="about">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Nugent | Portfolio</title>
 
-    <div class="about-photo">
-        <img src="assets/images/profile.jpg" alt="James Nugent">
-    </div>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #4a5568;
+        }
 
-    <div class="about-text">
+        .banner {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-        <h2>About Me</h2>
+        .about {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 70px 30px;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 55px;
+            align-items: start;
+        }
 
-        <p><strong>Operations. Finance. Data. One goal: helping businesses make better decisions.</strong></p>
+        .about-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 14px;
+        }
 
-        <p>
-            I've spent over 16 years helping businesses improve performance through better analysis, clearer reporting and stronger commercial decision-making.
-        </p>
+        .about-text h2 {
+            margin: 0 0 12px;
+            color: #1f3558;
+            font-size: 34px;
+        }
 
-        <p>
-            My career began in distribution and logistics, where I spent over seven years delivering reporting, resource planning, operational strategy and performance analysis for large distribution centres. That operational foundation gave me a deep understanding of how data supports real business decisions.
-        </p>
+        .about-text h2::after {
+            content: "";
+            display: block;
+            width: 58px;
+            height: 3px;
+            margin-top: 10px;
+            background: #b08a4a;
+        }
 
-        <p>
-            I then moved into finance, spending a further seven years as a Finance Business Partner responsible for budgeting, forecasting, financial modelling, capital investment and business partnering. Working closely with operational leaders strengthened my ability to translate complex financial information into practical, data-driven recommendations.
-        </p>
+        .about-text p {
+            margin: 0 0 18px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
 
-        <p>
-            <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong> Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
-        </p>
+        .about-text strong {
+            color: #1f3558;
+        }
 
-        <p>
-            Today I combine those experiences as an independent consultant, bringing together data, finance, process improvement and commercial analysis to solve business problems. Whether building dashboards, automating reporting, improving workflows or developing financial models, my focus is always the same: delivering clear insight that helps organisations make better decisions.
-        </p>
+        @media (max-width: 750px) {
+            .about {
+                grid-template-columns: 1fr;
+                padding: 45px 22px;
+            }
 
-        <p>
-            As I continue to grow my consultancy, I'm focused on partnering with businesses that want practical, reliable analytical support and creating solutions that deliver lasting value.
-        </p>
+            .about-photo {
+                max-width: 260px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
 
-    </div>
+<body>
 
-</section>
+    <img
+        class="banner"
+        src="assets/images/banner.png"
+        alt="James Nugent portfolio banner"
+    >
+
+    <section class="about">
+
+        <div class="about-photo">
+            <img src="assets/images/profile.jpg" alt="James Nugent">
+        </div>
+
+        <div class="about-text">
+
+            <h2>About Me</h2>
+
+            <p>
+                <strong>Operations. Finance. Data. One goal: helping businesses make better decisions.</strong>
+            </p>
+
+            <p>
+                I've spent over 16 years helping businesses improve performance through better analysis, clearer reporting and stronger commercial decision-making.
+            </p>
+
+            <p>
+                My career began in distribution and logistics, where I spent over seven years delivering reporting, resource planning, operational strategy and performance analysis for large distribution centres. That operational foundation gave me a deep understanding of how data supports real business decisions.
+            </p>
+
+            <p>
+                I then moved into finance, spending a further seven years as a Finance Business Partner responsible for budgeting, forecasting, financial modelling, capital investment and business partnering. Working closely with operational leaders strengthened my ability to translate complex financial information into practical, data-driven recommendations.
+            </p>
+
+            <p>
+                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong> Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
+            </p>
+
+            <p>
+                Today I combine those experiences as an independent consultant, bringing together data, finance, process improvement and commercial analysis to solve business problems. Whether building dashboards, automating reporting, improving workflows or developing financial models, my focus is always the same: delivering clear insight that helps organisations make better decisions.
+            </p>
+
+            <p>
+                As I continue to grow my consultancy, I'm focused on partnering with businesses that want practical, reliable analytical support and creating solutions that deliver lasting value.
+            </p>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
