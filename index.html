@@ -8,52 +8,65 @@
     <title>James Nugent | Portfolio</title>
 
     <style>
-
         * {
             box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
             background: #ffffff;
-            color: #4A5568;
+            color: #4a5568;
         }
 
         .banner-section {
-            background: #f7f7f5;
             padding: 0 30px;
+            background: #f7f7f5;
         }
 
         .banner {
             width: 100%;
-            max-width: 1400px;
+            max-width: 1120px;
             height: auto;
             margin: 0 auto;
             display: block;
         }
 
         .about {
-            max-width: 1150px;
+            width: 100%;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 70px 35px;
+            padding: 70px 40px;
             display: grid;
-            grid-template-columns: 260px 1fr;
-            gap: 60px;
+            grid-template-columns: 220px minmax(0, 1fr);
+            gap: 48px;
             align-items: start;
+        }
+
+        .about-photo {
+            width: 100%;
         }
 
         .about-photo img {
             width: 100%;
+            height: auto;
             display: block;
             border-radius: 16px;
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
         }
 
+        .about-text {
+            width: 100%;
+        }
+
         .about-text h2 {
             margin: 0;
+            color: #1f3558;
             font-size: 34px;
-            color: #1F3558;
         }
 
         .about-text h2::after {
@@ -62,12 +75,12 @@
             width: 60px;
             height: 3px;
             margin: 12px 0 24px;
-            background: #B08A4A;
+            background: #b08a4a;
         }
 
         .about-subtitle {
             margin-bottom: 24px;
-            color: #1F3558;
+            color: #1f3558;
             font-size: 20px;
             font-weight: 600;
             letter-spacing: 0.4px;
@@ -80,30 +93,46 @@
         }
 
         .about-text strong {
-            color: #1F3558;
+            color: #1f3558;
         }
 
-        @media (max-width: 850px) {
-
+        @media (max-width: 900px) {
             .banner-section {
                 padding: 0;
             }
 
             .about {
+                grid-template-columns: 190px minmax(0, 1fr);
+                gap: 35px;
+                padding: 55px 28px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .about {
                 grid-template-columns: 1fr;
-                padding: 45px 25px;
+                padding: 45px 22px;
             }
 
             .about-photo {
-                width: 100%;
-                max-width: 260px;
+                width: 220px;
                 margin: 0 auto;
             }
 
+            .about-text h2 {
+                font-size: 30px;
+            }
+
+            .about-subtitle {
+                font-size: 18px;
+            }
+
+            .about-text p {
+                font-size: 16px;
+                line-height: 1.7;
+            }
         }
-
     </style>
-
 </head>
 
 <body>
