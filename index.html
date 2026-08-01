@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>James Nugent | Portfolio</title>
 
     <style>
@@ -23,6 +24,10 @@
             color: #4a5568;
         }
 
+        /* ------------------------------
+           Banner
+        ------------------------------ */
+
         .banner-section {
             padding: 0 30px;
             background: #f7f7f5;
@@ -35,6 +40,10 @@
             margin: 0 auto;
             display: block;
         }
+
+        /* ------------------------------
+           About Me
+        ------------------------------ */
 
         .about {
             width: 100%;
@@ -63,13 +72,15 @@
             width: 100%;
         }
 
-        .about-text h2 {
+        .about-text h2,
+        .career h2 {
             margin: 0;
             color: #1f3558;
             font-size: 34px;
         }
 
-        .about-text h2::after {
+        .about-text h2::after,
+        .career h2::after {
             content: "";
             display: block;
             width: 60px;
@@ -79,7 +90,7 @@
         }
 
         .about-subtitle {
-            margin-bottom: 24px;
+            margin-bottom: 22px;
             color: #1f3558;
             font-size: 20px;
             font-weight: 600;
@@ -87,13 +98,117 @@
         }
 
         .about-text p {
-            margin: 0 0 20px;
+            margin: 0 0 18px;
             font-size: 17px;
             line-height: 1.8;
         }
 
-        .about-text strong {
+        /* ------------------------------
+           Career Journey
+        ------------------------------ */
+
+        .career-section {
+            background: #f7f7f5;
+        }
+
+        .career {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 70px 40px 85px;
+        }
+
+        .career-intro {
+            max-width: 720px;
+            margin: 0 0 40px;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .career-row {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 24px;
+        }
+
+        .career-row-bottom {
+            margin-top: 26px;
+        }
+
+        .career-card {
+            width: 280px;
+            min-height: 275px;
+            padding: 28px 25px;
+            background: #ffffff;
+            border: 1px solid #dfe5ec;
+            border-radius: 16px;
+            box-shadow: 0 10px 26px rgba(31, 53, 88, 0.06);
+            text-align: center;
+        }
+
+        .career-icon {
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cfd8e3;
+            border-radius: 14px;
+            background: #f8fafc;
+            font-size: 27px;
+        }
+
+        .career-card h3 {
+            min-height: 50px;
+            margin: 0 0 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #1f3558;
+            font-size: 20px;
+            line-height: 1.25;
+        }
+
+        .career-theme {
+            margin: 8px 0;
+            color: #66758a;
+            font-size: 16px;
+        }
+
+        .career-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b08a4a;
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .career-down-arrow {
+            margin: 18px 0;
+            color: #b08a4a;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* ------------------------------
+           Tablet
+        ------------------------------ */
+
+        @media (max-width: 1050px) {
+            .career-row {
+                gap: 14px;
+            }
+
+            .career-card {
+                width: 245px;
+            }
+
+            .career-arrow {
+                font-size: 24px;
+            }
         }
 
         @media (max-width: 900px) {
@@ -106,7 +221,36 @@
                 gap: 35px;
                 padding: 55px 28px;
             }
+
+            .career {
+                padding: 60px 28px 75px;
+            }
+
+            .career-row {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .career-card {
+                width: 100%;
+            }
+
+            .career-arrow {
+                display: none;
+            }
+
+            .career-down-arrow {
+                display: none;
+            }
+
+            .career-row-bottom {
+                margin-top: 14px;
+            }
         }
+
+        /* ------------------------------
+           Mobile
+        ------------------------------ */
 
         @media (max-width: 700px) {
             .about {
@@ -119,7 +263,8 @@
                 margin: 0 auto;
             }
 
-            .about-text h2 {
+            .about-text h2,
+            .career h2 {
                 font-size: 30px;
             }
 
@@ -127,9 +272,32 @@
                 font-size: 18px;
             }
 
-            .about-text p {
+            .about-text p,
+            .career-intro {
                 font-size: 16px;
                 line-height: 1.7;
+            }
+
+            .career {
+                padding: 50px 22px 65px;
+            }
+
+            .career-row {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .career-row-bottom {
+                margin-top: 18px;
+            }
+
+            .career-card {
+                min-height: auto;
+                padding: 25px 22px;
+            }
+
+            .career-card h3 {
+                min-height: auto;
             }
         }
     </style>
@@ -161,29 +329,96 @@
             </div>
 
             <p>
-                I've spent over 16 years helping businesses improve performance through better analysis, clearer reporting and stronger commercial decision-making.
+                I've spent over 16 years helping businesses solve problems through data, finance and commercial analysis. Throughout my career, I've worked across operations, logistics, finance and consulting, helping teams make better decisions through clearer reporting, financial insight and process improvement.
             </p>
 
             <p>
-                My career began in distribution and logistics, where I spent over seven years delivering reporting, resource planning, operational strategy and performance analysis for large distribution centres. That operational foundation gave me a deep understanding of how data supports real business decisions.
+                What has remained constant is my enjoyment of solving problems. Whether that's building financial models, improving reporting, simplifying business processes or transforming complex data into meaningful insight, I enjoy creating practical solutions that make a real difference.
             </p>
 
             <p>
-                I then moved into finance, spending a further seven years as a Finance Business Partner responsible for budgeting, forecasting, financial modelling, capital investment and business partnering. Working closely with operational leaders strengthened my ability to translate complex financial information into practical, data-driven recommendations.
+                Today I work as an independent consultant, combining data, finance and commercial thinking to help businesses improve performance through analysis, automation and decision support.
             </p>
 
-            <p>
-                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong>
-                Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
+        </div>
+
+    </section>
+
+    <section class="career-section">
+
+        <div class="career">
+
+            <h2>Career Journey</h2>
+
+            <p class="career-intro">
+                My career has developed across several areas of business, with each role adding new analytical, commercial and problem-solving experience.
             </p>
 
-            <p>
-                Today I combine those experiences as an independent consultant, bringing together data, finance, process improvement and commercial analysis to solve business problems. Whether building dashboards, automating reporting, improving workflows or developing financial models, my focus is always the same: delivering clear insight that helps organisations make better decisions.
-            </p>
+            <div class="career-row">
 
-            <p>
-                As I continue to grow my consultancy, I'm focused on partnering with businesses that want practical, reliable analytical support and creating solutions that deliver lasting value.
-            </p>
+                <article class="career-card">
+                    <div class="career-icon">🛍️</div>
+
+                    <h3>Buyer &amp; Vendor Support</h3>
+
+                    <div class="career-theme">Supplier Support</div>
+                    <div class="career-theme">Systems</div>
+                    <div class="career-theme">Product Visibility</div>
+                </article>
+
+                <div class="career-arrow">→</div>
+
+                <article class="career-card">
+                    <div class="career-icon">📊</div>
+
+                    <h3>Reporting Analyst</h3>
+
+                    <div class="career-theme">Reporting</div>
+                    <div class="career-theme">Performance</div>
+                    <div class="career-theme">Analysis</div>
+                </article>
+
+                <div class="career-arrow">→</div>
+
+                <article class="career-card">
+                    <div class="career-icon">🚚</div>
+
+                    <h3>Logistics Specialist</h3>
+
+                    <div class="career-theme">Planning</div>
+                    <div class="career-theme">Modelling</div>
+                    <div class="career-theme">Business Partnering</div>
+                </article>
+
+            </div>
+
+            <div class="career-down-arrow">↓</div>
+
+            <div class="career-row career-row-bottom">
+
+                <article class="career-card">
+                    <div class="career-icon">📈</div>
+
+                    <h3>Finance Business Partner</h3>
+
+                    <div class="career-theme">Storytelling</div>
+                    <div class="career-theme">Forecasting</div>
+                    <div class="career-theme">Commercial Finance</div>
+                </article>
+
+                <div class="career-arrow">→</div>
+
+                <article class="career-card">
+                    <div class="career-icon">💡</div>
+
+                    <h3>Data &amp; Finance Consultant</h3>
+
+                    <div class="career-theme">Data</div>
+                    <div class="career-theme">Finance</div>
+                    <div class="career-theme">Process Improvement</div>
+                </article>
+
+            </div>
 
         </div>
 
