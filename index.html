@@ -20,8 +20,16 @@
             color: #4A5568;
         }
 
-        .Banner {
+        .banner-section {
+            background: #f7f7f5;
+            padding: 0 30px;
+        }
+
+        .banner {
             width: 100%;
+            max-width: 1400px;
+            height: auto;
+            margin: 0 auto;
             display: block;
         }
 
@@ -37,9 +45,9 @@
 
         .about-photo img {
             width: 100%;
-            border-radius: 16px;
             display: block;
-            box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
         }
 
         .about-text h2 {
@@ -53,22 +61,22 @@
             display: block;
             width: 60px;
             height: 3px;
-            background: #B08A4A;
             margin: 12px 0 24px;
+            background: #B08A4A;
         }
 
         .about-subtitle {
+            margin-bottom: 24px;
+            color: #1F3558;
             font-size: 20px;
             font-weight: 600;
-            color: #1F3558;
-            margin-bottom: 24px;
             letter-spacing: 0.4px;
         }
 
         .about-text p {
+            margin: 0 0 20px;
             font-size: 17px;
             line-height: 1.8;
-            margin: 0 0 20px;
         }
 
         .about-text strong {
@@ -77,12 +85,17 @@
 
         @media (max-width: 850px) {
 
+            .banner-section {
+                padding: 0;
+            }
+
             .about {
                 grid-template-columns: 1fr;
                 padding: 45px 25px;
             }
 
             .about-photo {
+                width: 100%;
                 max-width: 260px;
                 margin: 0 auto;
             }
@@ -95,10 +108,12 @@
 
 <body>
 
-    <img
-        class="Banner"
-        src="assets/images/Banner.png"
-        alt="James Nugent Portfolio Banner">
+    <div class="banner-section">
+        <img
+            class="banner"
+            src="assets/images/Banner.png"
+            alt="James Nugent portfolio banner">
+    </div>
 
     <section class="about">
 
@@ -129,7 +144,8 @@
             </p>
 
             <p>
-                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong> Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
+                <strong>If there's one thing that has remained constant throughout my career, it's that I enjoy solving problems.</strong>
+                Whether that's simplifying a process, improving a financial model or turning messy data into meaningful insight, I get genuine satisfaction from finding practical solutions that make someone's job easier.
             </p>
 
             <p>
