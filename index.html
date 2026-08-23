@@ -51,22 +51,23 @@
             margin: 0 auto;
             padding: 70px 40px;
             display: grid;
-            grid-template-columns: 220px minmax(0, 1fr);
+            grid-template-columns: 180px minmax(0, 1fr);
             gap: 48px;
             align-items: start;
         }
 
-        .about-photo {
-            width: 100%;
-        }
+    .about-photo {
+    width: 180px;
+}
 
-        .about-photo img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 16px;
-            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-        }
+.about-photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
         .about-text {
             width: 100%;
