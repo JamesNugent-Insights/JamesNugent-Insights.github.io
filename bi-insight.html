@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BI & Insight | James Nugent</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background: #ffffff;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 55px 40px 80px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #66758a;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .back-link:hover {
+            color: #1f3558;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1f3558;
+            font-size: 34px;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 12px 0 20px;
+            background: #b08a4a;
+        }
+
+        .page-intro {
+            margin: 0 0 55px;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 760px;
+        }
+
+        .project-title {
+            margin: 0 0 28px;
+            color: #1f3558;
+            font-size: 26px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .project-text h3 {
+            margin: 0 0 8px;
+            color: #1f3558;
+            font-size: 18px;
+        }
+
+        .project-text ul {
+            margin: 0 0 24px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .project-text li {
+            margin-bottom: 6px;
+        }
+
+        .dashboard-image {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            border: 1px solid #d6dce3;
+            box-shadow: 0 8px 22px rgba(31, 53, 88, 0.08);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            padding: 6px 10px;
+            border-radius: 20px;
+            background: #f2f4f7;
+            color: #1f3558;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page {
+                padding: 40px 24px 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <a class="back-link" href="index.html">← Back to Projects</a>
+
+        <h1>BI &amp; Insight</h1>
+
+        <p class="page-intro">
+            Turning business data into clear reporting, insight and actionable decisions.
+        </p>
+
+        <h2 class="project-title">
+            Honest Folk — Sales Performance Dashboard
+        </h2>
+
+        <div class="project-grid">
+
+            <div class="project-text">
+
+                <h3>Problem</h3>
+                <ul>
+                    <li>No existing performance reporting; the owner relied on raw data and their own feel for how the business was performing.</li>
+                    <li>Needed a clear view of performance and the drivers behind a year-on-year sales decline.</li>
+                </ul>
+
+                <h3>Solution</h3>
+                <ul>
+                    <li>Built an interactive Power BI dashboard covering sales, volume, profitability, pricing and product mix.</li>
+                    <li>Added YoY comparisons and monthly variance analysis to identify where performance changed.</li>
+                </ul>
+
+                <h3>Key Insights</h3>
+                <ul>
+                    <li>94% of the YoY revenue decline occurred in Q4.</li>
+                    <li>Sales volume fell faster than revenue, with higher selling prices partially offsetting the decline.</li>
+                    <li>Espresso Martini mix increased +7.6pp YoY.</li>
+                    <li>Mojito mix declined -4.8pp YoY.</li>
+                </ul>
+
+                <h3>Tools &amp; Skills</h3>
+
+                <div class="tags">
+                    <span class="tag">Power BI</span>
+                    <span class="tag">DAX</span>
+                    <span class="tag">Power Query</span>
+                    <span class="tag">Data Modelling</span>
+                    <span class="tag">Commercial Analysis</span>
+                </div>
+
+            </div>
+
+            <div>
+                <!-- Dashboard image goes here next -->
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
