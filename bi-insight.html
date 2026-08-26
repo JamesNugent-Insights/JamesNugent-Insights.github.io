@@ -21,10 +21,10 @@
         }
 
 .page {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto 0 6%;
-    padding: 45px 40px 70px;
+    width: calc(100% - 12%);
+    max-width: none;
+    margin: 0 6%;
+    padding: 45px 0 70px;
 }
 
         .back-link {
@@ -67,9 +67,9 @@
             font-size: 26px;
         }
 
-        .project-grid {
+.project-grid {
     display: grid;
-grid-template-columns: 500px minmax(0, 1fr);
+    grid-template-columns: 600px minmax(0, 1fr);
     gap: 28px;
     align-items: stretch;
 }
