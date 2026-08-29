@@ -1,1 +1,253 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Transformation | James Nugent</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background: #ffffff;
+        }
+
+.page {
+    width: calc(100% - 12%);
+    max-width: none;
+    margin: 0 6%;
+    padding: 45px 0 70px;
+}
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #66758a;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .back-link:hover {
+            color: #1f3558;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1f3558;
+            font-size: 34px;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 12px 0 20px;
+            background: #b08a4a;
+        }
+
+        .page-intro {
+            margin: 0 0 55px;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 760px;
+        }
+
+        .project-title {
+            margin: 0 0 28px;
+            color: #1f3558;
+            font-size: 26px;
+        }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 600px minmax(0, 1fr);
+    gap: 28px;
+    align-items: stretch;
+}
+
+.project-section + .project-section {
+    margin-top: 70px;
+}
+
+        
+
+.project-text {
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    padding: 28px 30px;
+    box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
+}
+
+.project-image {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
+}
+
+        .project-image a {
+    display: block;
+    width: 100%;
+}
+     
+.data-note {
+    margin: 10px 4px 0;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+
+        
+        .project-text h3 {
+            margin: 0 0 8px;
+            color: #1f3558;
+            font-size: 18px;
+        }
+
+        .project-text ul {
+            margin: 0 0 24px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .project-text li {
+            margin-bottom: 6px;
+        }
+
+        .dashboard-image {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            border: 1px solid #d6dce3;
+            box-shadow: 0 8px 22px rgba(31, 53, 88, 0.08);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            padding: 6px 10px;
+            border-radius: 20px;
+            background: #f2f4f7;
+            color: #1f3558;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page {
+                padding: 40px 24px 60px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <a class="back-link" href="index.html">← Back to Projects</a>
+
+  
+      <h1>Data Transformation</h1>
+
+        <p class="page-intro">
+            
+        </p>
+
+        <div class="project-section">
+        <h2 class="project-title">
+            Semi-Structured to Structured Data
+        </h2>
+
+       
+<div class="project-text">
+
+    <h3>Problem</h3>
+    <ul>
+        <li>Valuable project data existed across individual reports, but its semi-structured format made consolidation and wider analysis difficult.</li>
+        <li>As a result, historical data was largely used only for individual project reporting rather than being reused to inform future projects and decisions.</li>
+    </ul>
+
+    <h3>Solution</h3>
+    <ul>
+        <li>Worked with users to understand the existing reporting process and identify inconsistencies in how data was recorded across projects.</li>
+        <li>Standardised key fields and categories while retaining the existing source-file format, avoiding additional work or disruption for users.</li>
+        <li>Used advanced Excel formulas to extract and restructure semi-structured data into a consistent intermediate table, accommodating differences in source layouts and removing non-data elements.</li>
+        <li>Built a Power Query transformation process to reshape the data for analysis, including unpivoting, before automatically consolidating data from multiple project files into a single structured dataset.</li>
+    </ul>
+
+    <h3>Impact</h3>
+    <ul>
+        <li>Created a structured, reusable dataset that provides a foundation for future reporting and analytical solutions.</li>
+        <li>Enabled the development of a historical tender pricing tool, using completed-project data to support more informed and dynamic pricing decisions.</li>
+        <li>Established a clean historical record of completed projects, allowing performance and project outcomes to be analysed retrospectively and used to inform future decisions.</li>
+        <li>Created opportunities for further reporting and analysis, with additional solutions now being explored.</li>
+    </ul>
+
+    <h3>Tools &amp; Skills</h3>
+
+    <div class="tags">
+        <span class="tag">Excel</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Advanced Formulas</span>
+        <span class="tag">Data Transformation</span>
+        <span class="tag">Data Standardisation</span>
+        <span class="tag">Stakeholder Workshops</span>
+    </div>
+
+</div>
+
+
+        
+        <div class="project-image">
+
+    <a href="assets/images/Data transformation1.png" target="_blank">
+        <img
+            class="dashboard-image"
+            src="assets/images/Data transformation1.png"
+            alt="Semi-Structured to Structured Data transformation process"
+        >
+    </a>
+
+    <p class="data-note">
+        * Figures shown use synthetic data for privacy purposes and do not represent actual client data.
+    </p>
+
+</div>
+
+
+</div>
+</div>
+            
+    </main>
+
+</body>
+
+</html>
