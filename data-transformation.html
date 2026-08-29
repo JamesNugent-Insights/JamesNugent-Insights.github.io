@@ -139,6 +139,12 @@
             box-shadow: 0 8px 22px rgba(31, 53, 88, 0.08);
         }
 
+.transformation-image {
+    width: 70%;
+    margin: 0 auto;
+}
+
+        
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -146,6 +152,8 @@
             margin-top: 10px;
         }
 
+
+    
         .tag {
             padding: 6px 10px;
             border-radius: 20px;
@@ -191,13 +199,14 @@
 
     <h3>Problem</h3>
     <ul>
-        <li>Valuable project data existed across individual reports, but its semi-structured format made consolidation and wider analysis difficult.</li>
-        <li>As a result, historical data was largely used only for individual project reporting rather than being reused to inform future projects and decisions.</li>
-    </ul>
-
+        <ul>
+    <li>Valuable project data existed across individual reports, but its semi-structured format made consolidation and wider analysis difficult.</li>
+    <li>Data was primarily used during individual projects, with no consolidated historical dataset available to review completed projects or inform future decisions.</li>
+    <li>Additional reporting elements were being manually added to the existing files, creating a cluttered structure and increasing the risk of errors.</li>
+</ul>
+   
     <h3>Solution</h3>
     <ul>
-        <li>Worked with users to understand the existing reporting process and identify inconsistencies in how data was recorded across projects.</li>
         <li>Standardised key fields and categories while retaining the existing source-file format, avoiding additional work or disruption for users.</li>
         <li>Used advanced Excel formulas to extract and restructure semi-structured data into a consistent intermediate table, accommodating differences in source layouts and removing non-data elements.</li>
         <li>Built a Power Query transformation process to reshape the data for analysis, including unpivoting, before automatically consolidating data from multiple project files into a single structured dataset.</li>
@@ -230,7 +239,7 @@
 
     <a href="assets/images/Data transformation1.png" target="_blank">
         <img
-            class="dashboard-image"
+            class="dashboard-image transformation-image"
             src="assets/images/Data transformation1.png"
             alt="Semi-Structured to Structured Data transformation process"
         >
