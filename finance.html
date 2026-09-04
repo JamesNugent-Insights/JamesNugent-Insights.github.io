@@ -52,7 +52,7 @@
   display: grid;
   grid-template-columns: 42% 58%;
   gap: 30px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .project-card {
@@ -63,6 +63,8 @@
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   color: #4a5568;
   line-height: 1.6;
+   height: 100%;
+  box-sizing: border-box;
 }
 
 .project-card h3 {
@@ -80,8 +82,13 @@
   padding-left: 20px;
 }
 
+    .project-image-wrap {
+  height: 100%;
+}
 .project-image {
   width: 100%;
+  height: 100%;
+object-fit: contain;
   display: block;
   border-radius: 10px;
   border: 1px solid #e2e6ea;
@@ -140,7 +147,7 @@
 
   </div>
 
-  <div>
+  <div class="project-image-wrap">
     <img
       class="project-image"
       src="assets/images/Cashflow1.png"
