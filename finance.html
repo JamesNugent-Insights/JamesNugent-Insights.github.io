@@ -55,53 +55,69 @@
   align-items: stretch;
 }
 
-.project-card {
-  background: #ffffff;
-  border: 1px solid #e2e6ea;
-  border-radius: 12px;
-  padding: 28px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  color: #4a5568;
-  line-height: 1.6;
-   height: 100%;
-  box-sizing: border-box;
+
 }
 
-.project-card h3 {
-  margin: 0 0 6px;
-  font-size: 16px;
-  color: #1f3558;
+
+.project-text {
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    padding: 28px 30px;
+    box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
 }
 
-.project-card p {
-  margin: 0 0 20px;
-}
-
-.project-card ul {
-  margin: 0 0 20px;
-  padding-left: 20px;
-}
-
-    .project-image-wrap {
-  height: 100%;
-}
 .project-image {
-  width: 100%;
-  height: 100%;
-object-fit: contain;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid #e2e6ea;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e1e5ea;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
+}
+
+.project-image a {
+    display: block;
+    width: 100%;
 }
 
 .data-note {
-  margin: 8px 0 0;
-  font-size: 12px;
-  color: #66758a;
-  line-height: 1.4;
+    margin: 10px 4px 0;
+    color: #777777;
+    font-size: 11px;
+    line-height: 1.4;
+    font-style: italic;
 }
 
+.project-text h3 {
+    margin: 0 0 8px;
+    color: #1f3558;
+    font-size: 18px;
+}
+
+.project-text ul {
+    margin: 0 0 24px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.project-text li {
+    margin-bottom: 6px;
+}
+
+.dashboard-image {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #d6dce3;
+    box-shadow: 0 8px 22px rgba(31, 53, 88, 0.08);
+}
+
+
+
+    
 
 .tags {
     display: flex;
@@ -119,7 +135,7 @@ object-fit: contain;
 }
 
     
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .project-grid {
     grid-template-columns: 1fr;
   }
@@ -175,19 +191,21 @@ object-fit: contain;
 </div>
   </div>
 
-  <a href="assets/images/Cashflow1.png" target="_blank">
-  <img
-    class="dashboard-image"
-    src="assets/images/Cashflow1.png"
-    alt="Cash Flow and Scenario Modelling dashboard and model"
-  >
-</a>
+ <div class="project-image">
 
-<p class="data-note">
-  <em>* * Figures shown use synthetic data for privacy purposes and do not represent actual client data.</em>
-</p>
-    
-  </div>
+    <a href="assets/images/Cashflow1.png" target="_blank">
+        <img
+            class="dashboard-image"
+            src="assets/images/Cashflow1.png"
+            alt="Cash Flow and Scenario Modelling dashboard and model"
+        >
+    </a>
+
+    <p class="data-note">
+        * Figures shown use synthetic data for privacy purposes and do not represent actual client data.
+    </p>
+
+</div>
 
 </div>
 
