@@ -198,6 +198,28 @@
     line-height: 1.5;
 }
 
+
+.view-projects {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 30px 6%;
+    color: #1f3558;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.view-projects span {
+    color: #b08a4a;
+    font-size: 22px;
+}
+
+.view-projects:hover {
+    opacity: 0.75;
+}
+
+        
      
         /* ------------------------------
            Tablet
@@ -349,9 +371,12 @@
         </div>
 
     </section>
+    
+<a href="#projects" class="view-projects">
+    View Projects <span>↓</span>
+</a>
 
-
-<section class="work-section">
+<section class="work-section" id="projects">
     <div class="work">
 
         <h2>Projects</h2>
