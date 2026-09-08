@@ -1,49 +1,241 @@
 
-<div class="project-section">
+<!DOCTYPE html>
+<html lang="en">
 
-    <h2 class="project-title">
-        HR Analytics – SQL &amp; Power BI
-    </h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="project-grid">
+    <title>Personal Projects | James Nugent</title>
 
-        <div class="project-text">
+    <style>
 
-            <h3>Project Brief</h3>
-            <ul>
-                <li>Created a relational database in SQL Server using multiple related datasets.</li>
-                <li>Queried and transformed the data using SQL, including joins and conditional logic.</li>
-                <li>Connected the transformed dataset to Power BI.</li>
-                <li>Built an interactive Power BI dashboard to analyse absenteeism patterns and key trends.</li>
-            </ul>
+        * {
+            box-sizing: border-box;
+        }
 
-            <h3>Tools &amp; Skills</h3>
-            <div class="tags">
-                <span class="tag">SQL</span>
-                <span class="tag">SQL Server</span>
-                <span class="tag">Power BI</span>
-                <span class="tag">Data Transformation</span>
-                <span class="tag">Data Visualisation</span>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333333;
+            background: #ffffff;
+        }
+
+        .page {
+            width: calc(100% - 12%);
+            max-width: none;
+            margin: 0 6%;
+            padding: 45px 0 70px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 35px;
+            color: #66758a;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .back-link:hover {
+            color: #1f3558;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1f3558;
+            font-size: 34px;
+        }
+
+        h1::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            margin: 12px 0 20px;
+            background: #b08a4a;
+        }
+
+        .page-intro {
+            margin: 0 0 55px;
+            font-size: 17px;
+            line-height: 1.7;
+            max-width: 760px;
+        }
+
+        .project-title {
+            margin: 0 0 28px;
+            color: #1f3558;
+            font-size: 26px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 600px minmax(0, 1fr);
+            gap: 28px;
+            align-items: stretch;
+        }
+
+        .project-section + .project-section {
+            margin-top: 70px;
+        }
+
+        .project-text {
+            background: #ffffff;
+            border: 1px solid #e1e5ea;
+            border-radius: 10px;
+            padding: 28px 30px;
+            box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
+        }
+
+        .project-image {
+            width: 100%;
+            box-sizing: border-box;
+            min-width: 0;
+            background: #ffffff;
+            border: 1px solid #e1e5ea;
+            border-radius: 10px;
+            padding: 16px;
+            box-shadow: 0 6px 18px rgba(31, 53, 88, 0.06);
+        }
+
+        .project-image a {
+            display: block;
+            width: 100%;
+        }
+
+        .dashboard-image {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            border: 1px solid #d6dce3;
+            box-shadow: 0 8px 22px rgba(31, 53, 88, 0.08);
+        }
+
+        .data-note {
+            margin: 10px 4px 0;
+            color: #777777;
+            font-size: 11px;
+            line-height: 1.4;
+            font-style: italic;
+        }
+
+        .project-text h3 {
+            margin: 0 0 8px;
+            color: #1f3558;
+            font-size: 18px;
+        }
+
+        .project-text ul {
+            margin: 0 0 24px;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        .project-text li {
+            margin-bottom: 6px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            padding: 6px 10px;
+            border-radius: 20px;
+            background: #f2f4f7;
+            color: #1f3558;
+            font-size: 13px;
+        }
+
+        @media (max-width: 800px) {
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page {
+                padding: 40px 24px 60px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main class="page">
+
+        <a class="back-link" href="index.html">← Back to Projects</a>
+
+        <h1>Personal Projects</h1>
+
+        <p class="page-intro">
+            Independent projects demonstrating a range of data and analytical skills.
+        </p>
+
+
+        <div class="project-section">
+
+            <h2 class="project-title">
+                HR Analytics – SQL &amp; Power BI
+            </h2>
+
+            <div class="project-grid">
+
+
+                <div class="project-text">
+
+                    <h3>Project Brief</h3>
+
+                    <ul>
+                        <li>Created a relational database in SQL Server using multiple related datasets.</li>
+                        <li>Queried and transformed the data using SQL, including joins and conditional logic.</li>
+                        <li>Connected the transformed dataset to Power BI.</li>
+                        <li>Built an interactive Power BI dashboard to analyse absenteeism patterns and key trends.</li>
+                    </ul>
+
+                    <h3>Tools &amp; Skills</h3>
+
+                    <div class="tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Data Transformation</span>
+                        <span class="tag">Data Visualisation</span>
+                    </div>
+
+                </div>
+
+
+                <div class="project-image">
+
+                    <a href="assets/images/hr_analytics_sql_powerbi.png" target="_blank">
+
+                        <img
+                            class="dashboard-image"
+                            src="assets/images/hr_analytics_sql_powerbi.png"
+                            alt="SQL Server query and Power BI HR analytics dashboard"
+                        >
+
+                    </a>
+
+                    <p class="data-note">
+                        * This project uses a practice dataset and does not contain real business or employee data.
+                    </p>
+
+                </div>
+
+
             </div>
 
         </div>
 
-        <div class="project-image">
+    </main>
 
-            <a href="assets/images/hr_analytics_sql_powerbi.png" target="_blank">
-                <img
-                    class="dashboard-image"
-                    src="assets/images/hr_analytics_sql_powerbi.png"
-                    alt="SQL Server query and Power BI HR analytics dashboard"
-                >
-            </a>
+</body>
 
-            <p class="data-note">
-                * This project uses a practice dataset and does not contain real business or employee data.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
+</html>
